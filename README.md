@@ -10,3 +10,4 @@ jupyter contrib nbextension install --user
 jupyter nbextension enable exercise2/main
 python -m tlaplus_jupyter.install
 ```
+![Screenshot](screenshot.png)
