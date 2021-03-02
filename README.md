@@ -11,3 +11,11 @@ jupyter nbextension enable exercise2/main
 python -m tlaplus_jupyter.install
 ```
 ![Screenshot](screenshot.png)
+
+## Docker Compose
+
+```
+docker-compose up --build notebook
+```
+
+Open the provided http link in your browser

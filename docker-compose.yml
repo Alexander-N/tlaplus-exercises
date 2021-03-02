@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  notebook:
+    build: .
+    environment:
+      - NBUSER=leslie
+    ports: 
+      - "8888:8888"
+    volumes:
+      - .:/home/leslie:delegated
