@@ -6,9 +6,6 @@ ENV NB_USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 RUN adduser --uid ${NB_UID} ${NB_USER}
 
-COPY *.ipynb /home/${NB_USER}/
-RUN chown -R ${NB_USER} /home/${NB_USER}
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     python3-pip \
